@@ -646,10 +646,14 @@ h1 {
 footer {
     margin-top: 28px;
 
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: nowrap;
+    white-space: nowrap;
 
     font-size: 12px;
-
     color: #8e8e93;
 }
 
@@ -661,16 +665,62 @@ footer span {
 
 footer strong {
     font-family:
-        "Snell Roundhand",
-        "Bradley Hand",
-        "Segoe Print",
-        cursive;
+        -apple-system,
+        BlinkMacSystemFont,
+        "SF Pro Text",
+        Inter,
+        system-ui,
+        sans-serif;
 
-    font-size: 17px;
-
-    font-weight: 500;
-
+    font-size: 14px;
+    font-weight: 350;
     color: #6e6e73;
+}
+.linkedin-link {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 24px;
+
+    height: 24px;
+
+    margin-left: 6px;
+
+    color: #0A66C2;
+
+    text-decoration: none;
+
+    vertical-align: middle;
+
+}
+
+
+.linkedin-link svg {
+
+    width: 16px;
+
+    height: 16px;
+
+    fill: #0A66C2;
+
+}
+
+
+.linkedin-link:hover {
+
+    color: #004182;
+
+}
+
+
+.linkedin-link:active {
+
+    color: #004182;
+
 }
 
 
